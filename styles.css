@@ -1,0 +1,328 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.gradients {
+    background: green; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(white,green,red); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(white,green,red); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(white,green,red); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(white,green,red); /* Standard syntax */
+}
+
+#mainWrapper {
+    width: 1170px;
+    margin: auto;
+    text-align: center;
+}
+
+header {
+    display: inline-block;
+    width: 100%;
+    height: 6em;
+    box-sizing: border-box;
+    padding: 0.5em;
+    border-radius: 0.4em 0.4em 0 0;
+}
+header img {
+    float: left;
+    height: 90%;
+    border-radius: 0.4em;
+}
+header h1 {
+    font-size: 4em;
+    color: black;
+    text-shadow: 1px 0.5px 1px white;
+}
+
+#contentWrapper {
+    padding: 0.1em 0;
+}
+#contentWrapper p {
+    padding: 0.5em;
+}
+#contentWrapper h1 {
+    padding: 1em;
+}
+
+#rules {
+    margin-top: 1em;
+    padding: 0.5em;
+}
+
+/*========= Start Categories ===========*/
+
+#categories {
+    display: inline-block;
+    margin-top: 2em;
+    width: 100%;
+
+}
+h1.categories {
+    padding-bottom: 1em;
+    text-decoration: underline;
+    text-shadow: 1px 1px  gray;
+
+}
+ul.categories {
+    list-style: none;
+
+    width: 100%;
+    margin: auto;
+}
+li.categories{
+    float: left;
+    margin: 0.6em;
+    background-image: url("./assets/images/map-flag.jpg");
+    background-repeat: no-repeat;
+    background-position: center center ;
+    width: 10em;
+    height: 6em;
+    padding-top: 2em;
+    font-size: 1.3em;
+    text-shadow: 0 0 6px black, -2px -2px 2px black, 2px 2px 2px black; ;
+    color: silver;
+
+
+}
+li.categories:hover {
+    transform: scale(1.1,1.1);
+}
+li.categories:active {
+    transform: scale(1,1);
+}
+a.categories {
+    text-decoration: none;
+}
+
+
+/*========= End Categories ===========*/
+
+#enter {
+    float: left;
+    width: 45%;
+    padding-top: 2.5em;
+}
+input {
+    margin-top: 1em;
+}
+
+input[type="submit"] {
+    background-color: #404040;
+    color: white;
+    border:1px solid black;
+    border-radius: 0.4em;
+    padding: 0.2em;
+}
+input[type="submit"]:hover {
+    box-shadow: 2px 2px 4px gray;
+}
+
+input[type="text"], input[type="text"]:focus {
+    outline: none;
+    border: solid 1px black;
+    border-radius: 0.4em;
+    padding: 0.2em;
+}
+#worning {
+    color: red;
+}
+#enteredLetters {
+    text-align: left;
+}
+#theDashes {
+    float: right;
+    width: 45%;
+    height: 180px;
+    padding-top: 2.5em;
+    background-image: url("./assets/images/BG_Map_Outline.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#mistakes {
+    color: red;
+}
+#hangman {
+    clear: both;
+}
+
+#hangman img {
+    width: 33%;
+}
+/* =========== Start footer ===========*/
+footer {
+    background-color: #404040;
+    width: 100%;
+    display: inline-block;
+    padding: 1em;
+    border-radius: 0 0 0.4em 0.4em;
+
+}
+p.footer {
+    float: left;
+    color: #8c8c8c;
+    text-shadow: 2px 2px 0.5px black;
+}
+p.footer:nth-child(2)  {
+    float: right;
+}
+a.footer:link, a.footer:visited{
+    color: #8c8c8c;
+    text-shadow: 2px 2px 0.5px black;
+}
+.fa-facebook:hover, .fa-facebook:active {
+    color: silver;
+    text-shadow: 4px 4px 1px black;
+    transform: scale(1.3,1.3);
+}
+
+/* =========== End footer ===========*/
+
+/*============ Start Ending ============*/
+
+#endWin {
+    margin: 3em auto;
+    height: 354px;
+    width: 80%;
+    border:solid 1px black;
+    border-radius: 0.4em;
+    background-image: url("./assets/images/win-image.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: white;
+    text-shadow: 1px 1px 0.5px black;
+}
+h1.endWin {
+    font-size: 3em;
+}
+h2.endWin  {
+    margin-bottom: 2em;
+}
+a.buton {
+    margin: 2em;
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 0.4em;
+    padding: 1em;
+    color: white;
+    text-shadow: 1px 1px 0.5px black;
+    background-color: rgba(0,0,0,0.3);
+}
+a.buton:hover {
+    text-shadow: 2px 2px 0.5px black;
+    font-size: 17px;
+    border: solid 2px black;
+    margin: 1.4em;
+}
+
+#endLoss {
+    margin: 3em auto;
+    height: 354px;
+    width: 80%;
+    border:solid 1px black;
+    border-radius: 0.4em;
+    background: silver; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(silver,black); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(silver,black); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(silver,black); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(silver,black); /* Standard syntax */
+    text-shadow: 0.5px 0.5px 0.5px gray;
+}
+img.endLoss {
+    float: left;
+    width: 20%;
+}
+#endLossHeaders {
+    margin: auto;
+    width: 80%;
+    text-align: center;
+    margin-bottom: 4em;
+}
+#endLossHeaders h1{
+    font-size: 3em;
+    margin:0;
+    padding: 1em 0 0 0 ;
+}
+
+/*============ End Ending ============*/
+
+a.mainButon {
+    float: right;
+    margin: -5em 8em 0 0;
+    background-color: #404040;
+}
+a.mainButon:hover {
+    margin: -5em 7em 0 0;
+}
+hr {
+    clear: both;
+}
+
+@media all and (max-width: 1169px) {
+    #mainWrapper {
+        width: 100%;
+    }
+
+    #enter {
+        float: none;
+    }
+
+    #theDashes {
+        float: none;
+    }
+    a.mainButon {
+        float: none;
+        margin: 1em 0;
+    }
+}
+@media all and (max-width: 400px) {
+    header h1 {
+        font-size: 2.2em;
+    }
+
+    #enter {
+        float: none;
+        width: 100%;
+    }
+
+    #theDashes {
+        margin: 1em;
+        float: none;
+        width: 100%;
+    }
+    #hangman img {
+       width:  100%;
+    }
+    a.mainButon {
+        float: none;
+        margin: 1em 0;
+    }
+}
+@media all and (max-width: 280px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    header img {
+        display: none;
+    }
+    #enter {
+        float: none;
+        width: 100%;
+    }
+
+    #theDashes {
+        margin: 1em;
+        float: none;
+        width: 100%;
+    }
+    #hangman img{
+        width:  100%;
+    }
+    a.mainButon {
+        float: none;
+        margin: 1em 0;
+    }
+}
